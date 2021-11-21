@@ -1,0 +1,81 @@
+/* Espaçar um pouco o conteúdo */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(255, 241, 111);
+}
+
+/* Tudo, exceto o jumbotron, tem espaçamento lateral para primeiras visualizações móveis */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Cabeçalho de página personalizado */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Faça com que o cabeçalho do tenha a mesma altura da navegação */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Rodapé de página personalizado */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Personalizar contêiner */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Mensagem de marketing principal e botão de inscrição */
+.jumbotron {
+  background-color: rgb(253, 175, 7);
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Conteúdo de marketing de apoio */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsivo: tablets de retrato e superior */
+@media screen and (min-width: 768px) {
+  /* Remova o preenchimento que definimos anteriormente */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Espaço para fora do masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remova a borda inferior do jumbotron para efeito visual */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
